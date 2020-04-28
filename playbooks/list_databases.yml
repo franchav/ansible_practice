@@ -1,0 +1,6 @@
+---
+
+- name: List Databases
+  hosts: localhost
+  tasks:
+    - shell: docker exec -i postgres9.6 psql --username=postgres --dbname=postgres -c "SELECT datname FROM pg_database;"

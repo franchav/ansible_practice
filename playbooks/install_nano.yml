@@ -1,0 +1,13 @@
+---
+
+- name: Update apt respository
+  hosts: localhost
+  tasks:
+    - apt: update_cache=yes 
+
+- name: Install Nano
+  hosts: localhost
+  tasks:
+    - apt: 
+       name: nano 
+       state: latest

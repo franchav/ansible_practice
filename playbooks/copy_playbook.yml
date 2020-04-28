@@ -1,0 +1,11 @@
+---
+# ansible -m copy -a "src=/home/ubuntu/ansible_practice/text_file.txt dest=/home/ubuntu/ansible_practice/text_file1.txt" --diff localhost
+
+- name: "Copy Text File"
+  hosts: localhost
+  tasks: 
+    - copy: src="/home/ubuntu/ansible_practice/text_file.txt" dest="/home/ubuntu/ansible_practice/text_file1.txt"
+
+
+
+
